@@ -1,0 +1,629 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+li {
+    list-style: none;
+}
+header {
+    background: url('./images/background-slider.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* background-attachment:fixed; */
+}
+.header-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+.menu-container{
+    width: 45%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    font-size: 13px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #ffffffd9;
+    text-decoration: none;
+    line-height: 50px;
+}
+.menu a:hover{
+    color: white;
+}
+.open,.close{
+    display: none;
+}
+.header-icons {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.fruit{
+    position: relative;
+    margin-left: 3.5rem;
+    text-align: center;
+    margin-top: 4rem ;
+    
+}
+.premium{
+    font-family: Sacramento;
+    font-size: 49px;
+    text-align: center;
+    color: rgb(245, 245, 100);
+    margin-top: -2.2rem;
+}
+.quality{
+    color: #e7e7e0;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 9px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.restaurant{
+    color: white;
+    font-size: 120px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: Cormorant Garamond;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 6rem;
+}
+.design{
+    height: 60px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 1.5rem;
+   
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 12.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* product-section */
+#about{
+    padding: 6rem 0;
+}
+.offer{
+    /* padding-top: 6rem; */
+    font-size: 40px;
+    font-family: Cormorant Garamond;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(49, 48, 48);
+}
+.offer-lines{
+    display: flex;
+    justify-content: center;
+    color: #a6a6a6;
+    /* margin-bottom: 40px; */
+}
+.offer-lines .lines{
+    width: 70px;
+    height: 0.1px;
+    border: 0.1px solid rgb(224, 220, 220);
+    margin: 10px 15px ;
+}
+.hearts{
+    font-family: Montserrat;
+    font-size: 14px;
+}
+.product-container{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(./images/always-fresh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin-top: -150px;
+    /* margin-bottom: 6rem; */
+}
+/* .product img{
+    width: 200px;
+} */
+.product{
+    width: 320px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 200px;
+   
+}
+.product-head{
+    font-size: 36px;
+    font-family:Cormorant Garamond ;
+    font-style: italic;
+    margin: 30px;
+    color: #3e3e3e;
+}
+.product-text{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #646464;
+}
+
+/* welcome-section */
+
+.welcome-section{
+    display: flex;
+    margin-bottom: 6rem;
+}
+.welcome-img,.welcome2-img{
+    width: 50%;
+    box-shadow:  5px 10px 20px 20px #f0f0f0;
+    object-fit: cover;
+} 
+.welcome-img{
+    border-radius: 0 10px 10px 0;
+}
+.welcome2-img{
+    border-radius: 10px 0 0 10px ;
+} 
+.welcome-text{
+    width: 400px;
+    margin: 0 0 200px 120px;
+}
+.welcome-text2{
+    width: 400px;
+    margin: 50px 0px 200px 120px;
+}
+.welcome-section2{
+    width: 50%;
+}
+.welcome{
+    font-family:Cormorant Garamond ;
+    font-size: 600px;
+    color: #f0f0f0;
+    font-style: italic;
+    margin-top: -200px;
+}
+.welcome-head,.welcome-head2{
+    font-family:Cormorant Garamond ;
+    font-size: 40px;
+    color: #3e3e3e;
+    font-style: italic;
+    margin-top: -222px;
+    line-height: 40px;
+}
+.welcome-head2{
+    margin-top: -280px;
+    text-align: right;
+}
+.welcome-head-text,.welcome-head-text2{
+    font-family:Montserrat ;
+    font-size: 14px;
+    color: #646464;
+    margin: 4rem 0;
+    line-height: 25px;
+}
+.welcome-head-text2{
+    text-align: right;
+}
+.about-link,.about-link2{
+    font-family:Montserrat ;
+    font-size: 11px;
+    color: #646464;
+    text-decoration: none;
+}
+.about-link2{
+    float: right;
+}
+.about-link:hover,.about-link2:hover{
+    color: #ff7417;
+}
+
+/* team-section */
+.team-section{
+    padding: 6rem 0;
+    background-color: #f9f9f9;
+}
+.teams{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+.team-member{
+    width: 247px;
+    text-align: center;
+}
+.name{
+    color: #3e3e3e;
+    font-family: Cormorant Garamond;
+    font-size: 16px;
+    margin: 15px;
+    font-weight: 700;
+}
+.role{
+    color: #a6a6a6;
+    font-size: 24px;
+    font-family: Montserrat; 
+    margin-bottom:15px ;
+}
+.description,.story-description{
+    color: #646464;
+    font-size: 14px;
+    font-family: Montserrat; 
+    line-height: 24px;
+}
+.back-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.back-img2{
+    width: 100%;
+    height: 150vh;
+    object-fit: cover;
+    margin-top: 12rem;
+}
+/* menu */
+#menu{
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 7rem 0;
+    margin-top: -1670px;
+    position: relative;
+    z-index: 1;
+}
+.menu-img{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.menu-section{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    margin-top: 6rem;
+}
+.menu-head{
+    color: #ff7417;
+    font-family: Cormorant Garamond;
+    font-size: 36px;
+    margin-bottom: 3rem;
+}
+.food{
+    width: 452px;
+    margin-bottom: 5rem;
+}
+.food-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Montserrat; 
+    border-bottom: 1px dashed #a6a6a6;
+    line-height: 40px;
+}
+.food-description{
+    width: 380px;
+    font-size: 14px;
+    font-family: Montserrat; 
+    color: #646464;
+    line-height: 20px;
+    margin-top: 10px;
+    font-style: italic;
+}
+.menu-btn{
+    text-align: center;
+    margin-top: 2rem;
+}
+.menu-btn button{
+    padding: 19px 41px;
+    background-color: #3f3f3f00;
+    border: 1px solid #646464;
+    text-align: center;
+    font-size: 11px;
+    font-family: Montserrat; 
+    color: #676767;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* testimonial */
+#testimonial{
+    background-color: #f9f9f9;
+    margin-top: 15rem;
+    padding: 6rem 0;
+}
+.slideshow{
+    margin-top: 4rem;
+    text-align: center;
+}
+.mySlides{
+    display: none;
+    height: 350px;
+}
+.mySlides p{
+    width: 820px;
+    margin: auto;
+}
+.story-description{
+    padding: 30px 0 20px 0;
+}
+.title{
+    color: #cacaca;
+    font-size: 14px;
+    font-family: Montserrat; 
+    line-height: 24px;
+}
+.rating{
+    color: #646464;
+    font-size: 28px;
+    font-family: Montserrat; 
+    padding-top: 1rem;
+}
+.arrow-section{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: -120px;
+    position: relative;
+}
+.arrow {
+    border: solid #a6a6a6;
+    border-width: 0 2px 2px 0;
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+}
+.right {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+
+}
+
+.left {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+
+/* reservation */
+.back-img3{
+    width: 100%;
+    height: 123vh;
+    object-fit: cover;
+}
+.reservation{
+    padding: 4rem 0;
+    width: 90%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -695px;
+}
+#offer-lines .lines{
+    width: 35px;
+}
+.booking{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+#input-text{
+    width: 500px;
+    height: 63px;
+    padding: 26px;
+    color: #a6a6a6;
+    font-size: 14px;
+    font-family: Montserrat; 
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(224, 220, 220);
+    margin-top: 2rem;
+}
+#input-text::placeholder{
+    color: #a6a6a6;
+    font-size: 14px;
+    font-family: Montserrat; 
+    font-style: italic;
+}
+#input-text:focus{
+    border-bottom: 1px solid #ff7417;
+}
+#date,#time,#persons{
+    width: 323px;
+    height: 65px;
+    padding: 20px;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(224, 220, 220);
+    color: #a6a6a6;
+    font-size: 14px;
+    font-family: Montserrat; 
+}
+#time,#persons{
+    color: #3e3e3e;
+}
+
+.booking-link{
+    margin-top: 4rem;
+    text-align: center;
+}
+.booking-link button{
+    font-family:Montserrat ;
+    font-size: 14px;
+    color: #646464;
+    font-weight: bold;
+    background: none;
+    border: none;
+    outline: none;
+}
+.booking-link button:hover{
+    color: #a6a6a6;
+}
+
+/* contacts */
+#contacts{
+    display: flex;
+    margin-top: 8rem;
+   
+}
+.contacts{
+    width: 50%;
+    padding: 7rem 0;
+}
+.map{
+    width: 50%;
+}
+.map img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.contact-head{
+    width: 179px;
+    font-family:Cormorant Garamond ;
+    font-size: 36px;
+    color: #3e3e3e;
+    font-style: italic;
+    margin: auto;
+}
+.timing-section{
+    padding: 6rem 0;
+}
+.timing{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #a6a6a6 ;
+    margin: auto;
+}
+#closed{
+    border-bottom: none;
+}
+.timing p{
+    font-family:Montserrat ;
+    font-size: 14px;
+    color: #292929;
+    line-height: 70px;
+}
+.contact-details p{
+    font-family:Montserrat ;
+    font-size: 14px;
+    color: #646464;
+    text-align: center;
+    line-height: 20px;
+}
+.contact-description{
+    margin-bottom: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    background-color: #393939;
+}
+footer p{
+    font-family:Montserrat ;
+    font-size: 14px;
+    color: #ffffff;
+    margin: auto;
+}
+.footer-icons{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.footer-icons a{
+    color: white;
+}
+.footer-icons a:hover{
+    color: #ff7417;
+}
+.attribution{
+    font-family:Montserrat ;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #393939;
+}
+.attribution a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1024px){
+.open{
+    display: block;  
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 35px;
+    right: 3rem; 
+}
+.close{
+    position: absolute;
+    display: none;
+    top: 40px;
+    right: 30px; 
+}
+header{
+    height: 100%;
+}
+.header-menu{
+    
+    padding: 1rem 4rem;
+}
+.fruit{
+    margin-left: 3.3rem;
+    margin-top: 0 ;
+}
+.premium{
+    font-family: Sacramento;
+    font-size: 44px;
+    margin-top: -2rem;
+}
+.quality{
+    font-size: 7px;
+}
+.restaurant{
+    font-size: 88px;
+    line-height: 80px;
+    padding-bottom: 0;
+}
+.product-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -200px;
+    padding: 0 2.5rem;
+}
+.product{
+    margin-top: 250px;
+}
+.product,.product img{
+    width: 203px;
+}
+.welcome-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}
