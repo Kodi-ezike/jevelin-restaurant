@@ -1010,7 +1010,9 @@ footer p{
     margin: auto;
     padding: 4rem 0 0 0;
 }
-
+#myBtn{
+    padding: 10px;
+}
 
 }
 
