@@ -1050,9 +1050,12 @@ footer p{
 .food-description{
     width: 200px;
     
-}
+}  
+.back-img{
+    height: 150vh;
+}    
 .back-img2{
-    height: 270vh;
+    height: 150vh;
 }
 .mySlides{
     height: 450px;
