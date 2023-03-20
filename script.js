@@ -65,3 +65,23 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Initialize and add the map
+function initMap() {
+  // The location of sheffield
+  const sheffield = { lat: 53.383331, lng: -1.466667 };
+  // The map, centered at sheffield
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: sheffield,
+  });
+  // The marker, positioned at sheffield
+  var fruitIcon = './images/Vector-Smart-Object1.png';
+  const marker = new google.maps.Marker({
+    position: sheffield,
+    map: map,
+    icon: fruitIcon
+  });
+}
+
+window.initMap = initMap;

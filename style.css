@@ -9,7 +9,7 @@ li {
     list-style: none;
 }
 header {
-    background: url('./images/background-slider.jpg') no-repeat;
+    background: url('./images/background-slider.jpg') no-repeat scroll right top #000000;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -58,9 +58,37 @@ header {
     position: relative;
     margin-left: 3.5rem;
     text-align: center;
-    margin-top: 4rem ;
-    
+    margin-top: 4rem ;   
 }
+.slide-in-top {
+	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 .premium{
     font-family: Sacramento;
     font-size: 49px;
@@ -93,6 +121,9 @@ header {
     border-radius: 20px;
     margin: auto;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
    
 }
 .circle{
@@ -100,16 +131,35 @@ header {
     height: 10px;
     background-color: white;
     border-radius: 5px;
-    margin-left: 12.5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* transform: translate(0px, 10px ) ; */
-    
-    transition: cubic-bezier(0px, 10px);
-    transition-property: height;
-    transition-duration: 5s;
+}
+.slide-top {
+	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }
 
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+  }
+  
 /* product-section */
 #about{
     padding: 6rem 0 0 0;
@@ -493,17 +543,16 @@ transform: rotate(135deg);
 /* contacts */
 #contacts{
     display: flex;
-    margin-top: 8rem;
-   
+    margin-top: 8rem;  
 }
 .contacts{
     width: 50%;
     padding: 7rem 0;
 }
-.map{
+.map-container{
     width: 50%;
 }
-.map img{
+#map{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -813,6 +862,16 @@ footer p{
 
 
 @media screen and (max-width:770px){
+header {
+    background: url('./images/background-slider.jpg') no-repeat scroll right top #000000;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment:scroll;
+}
 .menu li{
     width: 100%;
 }    
@@ -967,7 +1026,7 @@ footer p{
 }
 
 /* contacts  */
-#contacts,.timing{
+#contacts{
     display: block;
 }
 .timing{
@@ -979,7 +1038,7 @@ footer p{
     line-height: 20px;
    
 }
-.contacts,.map{
+.contacts{
     width: 100%;
     margin: auto;
     
@@ -994,10 +1053,9 @@ footer p{
     margin: auto;
     text-align: center;
 }
-.map img{
+.map-container{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 500px;
 }
 /* footer  */
 footer{
@@ -1023,10 +1081,10 @@ footer p{
 
 @media screen and (max-width:500px) {
 .logo,.menu{
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
 }
 .open,.close{
-    right: 4rem;
+    right: 2rem;
 }
 .product,.product img,.team-member img,.team-member{
     width: 240px;
@@ -1085,12 +1143,6 @@ footer p{
 
 
 @media screen and (max-width:375px){
-.logo,.menu{
-    padding: 1rem 2rem;
-}   
-.open,.close{
-    right: 2rem;
-}
 .restaurant{
     font-size: 77px;
 }
