@@ -11,6 +11,9 @@ li {
 header {
     background: url('./images/background-slider.jpg') no-repeat;
     background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
     background-position: center;
     height: 100vh;
     background-attachment:fixed;
