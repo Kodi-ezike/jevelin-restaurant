@@ -997,6 +997,7 @@ header {
 }
 .food-description{
     width: 486px;
+    margin: 10px auto;
     text-align: center;
 }
 
